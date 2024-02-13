@@ -1,7 +1,8 @@
 export default function decorate(block) {
     [...block.children].forEach((row) => {
-        row.innerHTML = `<h1>${row.innerText}</h1>`;
-        console.log('test');
+        const image = row.getElementsByTagName('img')[0];
+        row.innerHTML = `<div><img src = ${image.src}></img><br/><p>${row.innerText}</p></div>`;
+        
     });
   
 }
