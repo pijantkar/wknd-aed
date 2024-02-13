@@ -5,6 +5,7 @@ export default function decorate(block) {
     const classes = ['image', 'text'];
     classes.forEach((e, j) => {
       row.children[j].classList.add(`carousel-${e}`);
+      row.children[j].classList.add(`my-class`);
     });
     /* buttons */
     const button = document.createElement('button');

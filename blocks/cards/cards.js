@@ -2,13 +2,14 @@ import { createOptimizedPicture } from '../../scripts/lib-franklin.js';
 
 export default function decorate(block) {
   /* change to ul, li */
+  console.log("CONSOLE LOG  TEST");
   const ul = document.createElement('ul');
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     li.innerHTML = row.innerHTML;
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
-      else div.className = 'cards-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image myclass';
+      else div.className = 'cards-card-body myclass';
     });
     ul.append(li);
   });
