@@ -7,5 +7,6 @@
 
 .helloworld.custom {
     background-color: var(--highlight-background-color);
-    color: var(--color-yellow);
+    color: var(--color-red);
+    font-family: Arial, Helvetica, sans-serif;
 }
