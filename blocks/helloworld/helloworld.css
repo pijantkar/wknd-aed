@@ -1,0 +1,11 @@
+.helloworld {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+
+.helloworld.custom {
+    background-color: var(--highlight-background-color);
+    color: var(--color-yellow);
+}
